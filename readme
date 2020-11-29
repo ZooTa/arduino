@@ -1,0 +1,16 @@
+Electronic gate (Arduino project)
+System components:
+1-	Push button -------------------------  to turn on / off the system.
+2-	Servo motor -------------------------  indicates state of electronic gate
+3-	Two LDR sensors -------------------   one for entrees the other for leavers
+4-	2 LEDs ---------------------------------  red LED and green LED
+5-	Buzzer ---------------------------------  to alarm for maximum number of persons.
+6-	Resistors (1k , 330 ohm) , Arduino board, breadboard and wires.
+System description (mechanism);
+The system simulates an electronic gate for persons.
+When they come near to the gate from out side the LDR send a signal to servo motor to open the gate for entrees
+and the red LED lights up to indicate that one person has entered and the count increase by 1.
+When one person inside the room decided to go out, when he/she comes near to the gate
+another LDR responsible for leavers send a signal to servo motor to open the gate
+and green LED lights up to indicate that one person has left the room and the count decrease by 1
+If the count exceed 5 then the buzzer is shouted an alarm and the gate only opened for leavers and not open for entrees any more
